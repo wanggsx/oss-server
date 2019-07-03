@@ -46,7 +46,6 @@ public interface MaterialService {
      */
     List<FileBinaryResponse> saveAndStore(OSSInformation ossInformation,OSSDeveloper ossDeveloper, OSSAppInfo ossApp, File projectDirectory, List<FileBinaryRequest> fileBinaryRequests) throws IOException;
 
-
     /***
      * 存储文件
      * @param projectDirectory
@@ -54,8 +53,8 @@ public interface MaterialService {
      * @return
      */
     List<FileBinaryResponse> saveAndStore(OSSInformation ossInformation,OSSDeveloper ossDeveloper, OSSAppInfo ossApp, File projectDirectory, MultipartFile[] multipartFile) throws IOException;
-
+ 
 
     List<FileBinaryResponse> saveAndStoreBySys(OSSInformation ossInformation,File projectDirectory, MultipartFile[] multipartFile) throws IOException;
-
+ 
 }
